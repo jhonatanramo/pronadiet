@@ -1,0 +1,196 @@
+:root {
+    --caribbean-current: #006371ff;
+    --selective-yellow: #FCBB14ff;
+    --spanish-orange: #DE631Fff;
+    --cornsilk: #FEF4DCff;
+    --moonstone: #00A4B8ff;
+    --nose: #E1EAECff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .logo {
+    background-color: var(--nose);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .logo_sub {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 98%;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo_sub img {
+    width: 180px;
+    height: 70px;
+  }
+  
+  .logo .img {
+    width: 100%;
+    height: 4vh;
+    background-image: url('./../../public/imagenes/logos/cuadradorverde.png');
+    background-size: 70px;
+  }
+  
+  .cabeza2 a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--caribbean-current);
+    font-weight: bold;
+    transition: 0.3s;
+    padding-left: 20px;
+  }
+  
+  .cabeza2 a:hover {
+    color: var(--spanish-orange);
+  }
+  
+  .fondo {
+    background-color: var(--caribbean-current);
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .caja {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 6rem;
+  }
+  
+  .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .verde {
+    background-color: var(--caribbean-current);
+        color: var(--cornsilk);
+
+  }
+  .blanco {
+    background-color: white;
+  }
+  
+  .whatsApp {
+    background-color: var(--cornsilk);
+    color: var(--caribbean-current);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 2px solid var(--caribbean-current);
+    box-shadow: 1px 1px 3px var(--cornsilk);
+    transition: 0.3s;
+    z-index: 1001;
+  }
+  
+  .whatsApp:hover {
+    background-color: var(--caribbean-current);
+    color: var(--cornsilk);
+    cursor: pointer;
+  }
+  
+  /* Galería de productos */
+  .scrol {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .scrol::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .contenedor {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    color: var(--caribbean-current);
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .contenedor img {
+    max-width: 100%;
+    height: 170px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contenedor button {
+    background-color: var(--selective-yellow);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+  }
+  
+  .contenedor button:hover {
+    background-color: var(--spanish-orange);
+    color: white;
+  }
+  
+  .contenedor2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--selective-yellow);
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .logo_sub {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .cabeza2 {
+      width: 100%;
+    }
+    .scrol {
+      gap: 0.5rem;
+    }
+    .contenedor {
+      width: 150px;
+    }
+  }
+  
