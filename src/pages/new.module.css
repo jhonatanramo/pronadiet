@@ -1,4 +1,4 @@
-/* new.module.css - CSS Mejorado */
+/* new.module.css - CSS Mejorado con Tipografías */
 
 :root {
   --caribbean-current: #006371ff;
@@ -11,6 +11,97 @@
   --transicion: all 0.3s ease;
 }
 
+/* Importación de fuentes locales si no están en Google Fonts */
+@font-face {
+  font-family: 'Rastenia';
+  src: url('/fonts/Rastenia-Regular.woff2') format('woff2'),
+       url('/fonts/Rastenia-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rastenia';
+  src: url('/fonts/Rastenia-Italic.woff2') format('woff2'),
+       url('/fonts/Rastenia-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Thin.woff2') format('woff2'),
+       url('/fonts/DMSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Light.woff2') format('woff2'),
+       url('/fonts/DMSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Regular.woff2') format('woff2'),
+       url('/fonts/DMSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Medium.woff2') format('woff2'),
+       url('/fonts/DMSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-SemiBold.woff2') format('woff2'),
+       url('/fonts/DMSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Bold.woff2') format('woff2'),
+       url('/fonts/DMSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-ExtraBold.woff2') format('woff2'),
+       url('/fonts/DMSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Black.woff2') format('woff2'),
+       url('/fonts/DMSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,8 +112,63 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Títulos principales con Rastenia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rastenia', serif;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Elementos con DM Sans en diferentes pesos */
+p, a, button, span, li {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Aplicación específica de pesos de DM Sans */
+.cabeza2 a {
+  font-weight: 600; /* SemiBold */
+}
+
+.heroTexto {
+  font-weight: 300; /* Light */
+}
+
+.subtitulo {
+  font-weight: 400; /* Regular */
+}
+
+.cardVision p, .paso p, .zonaEntrega p {
+  font-weight: 400; /* Regular */
+}
+
+.botonAccion, .contenedor button, .botonWhatsappProducto {
+  font-weight: 600; /* SemiBold */
+}
+
+.footer p, .derechos p {
+  font-weight: 300; /* Light */
+}
+
+.contactoDirecto p {
+  font-weight: 500; /* Medium */
 }
 
 .logo {
@@ -70,7 +216,6 @@ body {
 .cabeza2 a {
   text-decoration: none;
   color: var(--caribbean-current);
-  font-weight: bold;
   transition: var(--transicion);
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -163,8 +308,6 @@ body {
 }
 
 .contenidoSeccion h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -267,11 +410,6 @@ body {
   object-fit: contain;
 }
 
-.contenedor h2 {
-  margin: 0.5rem 0;
-  font-size: 1.5rem;
-}
-
 .contenedor button {
   background-color: var(--selective-yellow);
   border: none;
@@ -279,7 +417,6 @@ body {
   transition: var(--transicion);
   border-radius: 5px;
   padding: 0.5rem 1.5rem;
-  font-weight: bold;
   margin-top: auto;
   color: var(--caribbean-current);
 }
@@ -333,7 +470,6 @@ body {
 .contenedor2 h3 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
 
 .contenedor2 p {
@@ -358,7 +494,6 @@ body {
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: var(--transicion);
-  font-weight: bold;
 }
 
 .botonWhatsappProducto:hover {
@@ -462,7 +597,6 @@ body {
   border-radius: 5px;
   padding: 0.75rem 2rem;
   font-size: 1.1rem;
-  font-weight: bold;
   cursor: pointer;
   transition: var(--transicion);
   margin-top: 1rem;
@@ -639,7 +773,9 @@ body {
     bottom: 1rem;
     right: 1rem;
   }
-}/* --- Ajustes adicionales para mejorar la responsividad --- */
+}
+
+/* --- Ajustes adicionales para mejorar la responsividad --- */
 
 @media (max-width: 992px) {
   .logo_sub img {

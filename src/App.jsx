@@ -285,7 +285,7 @@ function App() {
       <footer className={Css.footer}>
         <div className={Css.contenidoFooter}>
           <div className={Css.infoFooter}>
-            <img src={Logo_Blando} alt="Natural Foods" className={Css.logoFooter} />
+            <img src={Logo_Verde_letra} alt="Natural Foods" className={Css.logoFooter} />
             <p>Productos naturales para una vida saludable</p>
           </div>
           <div className={Css.enlacesFooter}>
