@@ -26,7 +26,7 @@ body {
 }
 
 .logo {
-  background-color: var(--nose);
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
