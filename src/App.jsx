@@ -7,8 +7,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/new" element={<Pronadiet />} />
-        <Route path="/" element={<Codigo />} />
+        <Route path="/" element={<Pronadiet />} />
       </Routes>
     </BrowserRouter>
   );

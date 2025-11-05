@@ -379,7 +379,6 @@ p, a, button, span, li {
 
 .contenedor {
   flex: 0 0 auto;
-  width: 250px;
   min-height: 350px;
   background-color: white;
   color: var(--caribbean-current);
@@ -405,9 +404,7 @@ p, a, button, span, li {
 
 .contenedor img {
   max-width: 100%;
-  height: 170px;
-  margin-bottom: 1rem;
-  object-fit: contain;
+  height: 300px;
 }
 
 .contenedor button {
@@ -416,7 +413,7 @@ p, a, button, span, li {
   cursor: pointer;
   transition: var(--transicion);
   border-radius: 5px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   margin-top: auto;
   color: var(--caribbean-current);
 }
@@ -436,7 +433,7 @@ p, a, button, span, li {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
   text-align: center;
